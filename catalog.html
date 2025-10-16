@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog Utilaje - Luka's EuroUtilaje</title>
-    <meta
-      name="description"
-      content="Catalog utilaje agricole second-hand importate din Olanda și Germania. Tractoare, combine, pluguri și remorci disponibile în stoc."
-    />
     <link rel="stylesheet" href="catalog.css" />
   </head>
   <body>
-    <!-- HEADER -->
     <header>
       <nav>
         <a href="index.html">Acasă</a>
@@ -21,69 +16,123 @@
       </nav>
     </header>
 
-    <!-- CATALOG -->
     <section class="section">
       <h1>Catalog Utilaje</h1>
       <div class="catalog">
         <!-- CARD 1 -->
-        <div class="card">
+        <div
+          class="card"
+          data-images='[
+            "machinery_photo/cisterna.jpg",
+            "machinery_photo/cisterna-1.jpg",
+            "machinery_photo/cisterna-2.jpg"
+            ]'
+        >
           <img
-            src="machinery photo/motocutor-pasquali.png"
-            alt="Tractor John Deere"
+            src="machinery_photo/colaj-cisterna .jpg"
+            alt="Colaj imagini cisterna"
           />
           <div class="card-content">
-            <h3>Motocultor Pasquali</h3>
+            <h3>Cisterna/Vidanja</h3>
             <p>
-              Motocultor Pasquali pe motorină Motor Lombardini Lda 100 Putere 18
-              cai Freză 110 cm Plug reversibil original Pasquali Pornire
-              electrică, baterie nouă Arată și funcționează impecabil Adus din
-              Olanda
+              Cisterna/ vidanja Capacitate 4000 litri galvanizata pompa dublu
+              sens, trage si impinge.Import Olanda,stare tehnica buna!
             </p>
-            <p class="price">1.750 €</p>
+            <p class="price">2.950 €</p>
           </div>
         </div>
 
         <!-- CARD 2 -->
-        <div class="card">
-          <img src="combine.jpg" alt="Combine Claas" />
+        <div
+          class="card"
+          data-images='[
+            "machinery_photo/motocultor-antoniocarrano.jpg",
+            "machinery_photo/motocultor-antoniocarrano-1.jpg",
+            "machinery_photo/motocultor-antoniocarrano-2.jpg",
+            "machinery_photo/motocultor-antoniocarrano-3.jpg",
+            "machinery_photo/motocultor-antoniocarrano-4.jpg",
+            "machinery_photo/motocultor-antoniocarrano-5.jpg"
+          ]'
+        >
+          <img
+            src="machinery_photo/colaj-motocultor-antonio.jpg"
+            alt="colaj-motocultor-antonio"
+          />
           <div class="card-content">
-            <h3>Combine Claas Lexion 770</h3>
+            <h3>Motocultor Antonio Carraro</h3>
             <p>
-              Capacitate mare de recoltare, an fabricație 2014, 3800 ore. Header
-              inclus.
+              Motocultor Antonio Carraro pe motorina pornire electrica bateria
+              noua,set de roti extra cu cauciucuri noi pentru plug. Plug
+              reversibil putere 9 cai reductor mic/mare, diferential blocabil 3
+              viteze + 1,coarne reglabile.Import Olanda,stare tehnică buna!
             </p>
-            <p class="price">85.000 €</p>
+            <p class="price">1.550 €</p>
           </div>
         </div>
 
         <!-- CARD 3 -->
-        <div class="card">
-          <img src="plug.jpg" alt="Plug Lemken" />
+        <div
+          class="card"
+          data-images='[
+            "machinery_photo/freza.jpg",
+            "machinery_photo/freza-1.jpg",
+            "machinery_photo/freza-2.jpg",
+            "machinery_photo/freza-3.jpg"
+          ]'
+        >
+          <img src="machinery_photo/colaj-freza.jpg" alt="Colaj imagini plug" />
           <div class="card-content">
-            <h3>Plug Lemken VariOpal 8</h3>
+            <h3>Freza agricola</h3>
             <p>
-              8 trupițe, reglaj hidraulic, potrivit pentru tractoare peste 120
-              CP.
+              Freza agricola latime de lucru 2 metri.In perfecta stare de
+              funtionare.Import Olanda,stare tehnica buna!
             </p>
-            <p class="price">7.500 €</p>
+            <p class="price">1.250 €</p>
           </div>
         </div>
 
         <!-- CARD 4 -->
-        <div class="card">
-          <img src="remorca.jpg" alt="Remorcă Fliegl" />
+        <div
+          class="card"
+          data-images='[
+            "machinery_photo/motocultor-pasquali.jpg",
+            "machinery_photo/motocultor-pasquali-1.jpg",
+            "machinery_photo/motocultor-pasquali-2.jpg",
+            "machinery_photo/motocultor-pasquali-3.jpg",
+            "machinery_photo/motocultor-pasquali-4.jpg",
+            "machinery_photo/motocultor-pasquali-5.jpg"
+          ]'
+        >
+          <img
+            src="machinery_photo/colaj-motocultor-pasquali.png"
+            alt="Colaj motocultor-pasquali"
+          />
           <div class="card-content">
-            <h3>Remorcă Fliegl 12T</h3>
-            <p>Capacitate 12 tone, frână pneumatică, an fabricație 2016.</p>
-            <p class="price">9.800 €</p>
+            <h3>Motocultor Pasquali</h3>
+            <p>
+              Motocultor Pasquali pe motorină motor Lombardini Lda 100 Putere 18
+              cai,freză 110 cm, plug reversibil original Pasqual,pornire
+              electrică, baterie nouă.Import
+              Olanda,stare tehnica buna!
+            </p>
+            <p class="price">1.750 €</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="hidden">
+      <span id="close">&times;</span>
+      <img id="lightbox-img" src="" alt="" />
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+
     <footer>
       <p>&copy; 2025 Luka's EuroUtilaje. Toate drepturile rezervate.</p>
     </footer>
+
+    <script src="catalog.js"></script>
   </body>
 </html>

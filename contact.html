@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Luka's EuroUtilaje</title>
+
+    <!-- Google Fonts + Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+
   </head>
+
   <body>
     <header>
       <nav>
@@ -17,27 +22,41 @@
 
     <section class="section">
       <h1>Contactează-ne</h1>
-      <p>📍 Adresă: Str. Exemplu nr. 10, București</p>
-      <p>📞 Telefon: 07xx xxx xxx</p>
-      <p>✉️ Email: contact@lukaseuroutilaje.ro</p>
 
-      <form
-        action="mailto:contact@lukaseuroutilaje.ro"
-        method="post"
-        enctype="text/plain"
-      >
-        <label for="nume">Nume:</label><br />
-        <input type="text" id="nume" name="nume" required /><br /><br />
+      <div class="contact-info">
+        <div class="info-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <span><strong>Adresă:</strong> Str. Bisericii, nr. 5, Viișoara, jud. Vrancea</span>
+        </div>
 
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+        <div class="info-item">
+          <span class="material-symbols-outlined">call</span>
+          <span><strong>Telefon:</strong> 0724 910 444</span>
+        </div>
 
-        <label for="mesaj">Mesaj:</label><br />
-        <textarea id="mesaj" name="mesaj" rows="5" required></textarea
-        ><br /><br />
+        <div class="info-item">
+          <span class="material-symbols-outlined">mail</span>
+          <span><strong>Email:</strong> lukaseuroutilaje@gmail.com</span>
+        </div>
 
-        <button type="submit">Trimite</button>
-      </form>
+        <div class="info-item">
+          <span class="material-symbols-outlined">map</span>
+          <a
+            href="https://www.google.com/maps?q=Strada+Bisericii+5,+Viișoara,+Vrancea"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="maps-link"
+          >
+            Vezi locația pe Google Maps
+          </a>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps?q=Strada+Bisericii+5,+Viișoara,+Vrancea&output=embed"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
     </section>
 
     <footer>
